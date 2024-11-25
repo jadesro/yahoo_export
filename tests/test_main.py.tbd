@@ -1,0 +1,13 @@
+import pytest
+
+from main import read_from_db
+
+
+@pytest.mark.parametrize(
+    "str1, expected",
+    [
+        ("mysql+pymysql://jacques:1Kermit1@192.168.1.20/finance?charset=utf8mb4", 13),
+    ],
+)
+def test_read_from_db(str1: str, expected: str) -> None:
+    assert read_from_db(str1) == expected
