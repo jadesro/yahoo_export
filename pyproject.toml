@@ -4,7 +4,7 @@ version = "0.2.0"
 description = "Export the finance DB to a csv"
 readme = "README.md"
 author = [
-  { name = "Jacques Desroches", email="jacques@desroches.ca" }
+  { name = "jadesro", email="jadesro@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = [
