@@ -1,13 +1,15 @@
 [project]
-name = "export"
-version = "0.1.0"
-description = "Add your description here"
+name = "yahoo_export"
+version = "0.2.0"
+description = "Export the finance DB to a csv"
 readme = "README.md"
+author = [
+  { name = "Jacques Desroches", email="jacques@desroches.ca" }
+]
 requires-python = ">=3.12"
 dependencies = [
-    "pandas>=2.2.3",
-    "pymysql>=1.1.1",
-    "sqlalchemy>=2.0.36",
+   "pandas>=2.2.3",
+   "sqlalchemy>=2.0.36",
 ]
 
 [tool.pytest.ini_options]
@@ -22,3 +24,8 @@ dev = [
     "pytest>=8.3.3",
     "sqlalchemy-utils>=0.41.2",
 ]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
